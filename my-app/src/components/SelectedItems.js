@@ -10,8 +10,9 @@ const {items} = useContext(ItemContext)
     
     
  
-        <div>
-          <ul>
+        <div className="box">
+          <h1 className="selectedItemsHeader">Selected Items</h1>
+          <ul style={{ backgroundColor: "#f0807f" }}>
             {items.map((item) => <SelectedList propItem={item}/>)}
           </ul>
         </div>
